@@ -5,7 +5,7 @@
       <div class="content-section">
         <!-- 左边图片 -->
         <div class="image-container">
-          <img src="/dentist.png" alt="Welcome Image" class="home-image" />
+          <img :src="`${publicPath}dentist.png`" alt="Welcome Image" class="home-image" />
         </div>
         <!-- 右边文字 -->
         <div class="text-container">
@@ -22,6 +22,7 @@ export default {
   data() {
     return {
       role: "", // 用户角色
+      publicPath: process.env.BASE_URL
     };
   },
   mounted() {
