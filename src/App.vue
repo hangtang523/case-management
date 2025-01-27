@@ -15,7 +15,6 @@
       </div>
     </div>
 
-    <!-- 登录页面等不需要导航栏的页面 -->
     <div v-else class="standalone-page">
       <router-view />
     </div>
